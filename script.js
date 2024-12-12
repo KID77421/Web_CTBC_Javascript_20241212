@@ -29,3 +29,110 @@ console.log(fontColor);
 // 設定變數 set
 test = 9;
 console.log(test);
+
+// 資料類型
+let varNumber = 1.5;    // 數值
+let varString = "字串"; // 字串
+let varBool = true;     // 布林值 (true、false)
+
+console.log(varNumber);
+console.log(varString);
+console.log(varBool);
+
+// typeof 獲得資料類型
+console.log(typeof varNumber);
+console.log(typeof varString);
+console.log(typeof varBool);
+
+// 運算子
+// 加減乘除餘次方
+console.log(10 + 3);
+console.log(10 - 3);
+console.log(10 * 3);
+console.log(10 / 3);
+console.log(10 % 3);        // 10除以3=3餘1
+console.log(10 ** 3);       // 10的3次方
+
+// 指定運算子(指定符號=)
+// 1+2=3 數學內的等號，左右兩邊一定相等，由左至右執行
+// = 指定，左右兩邊不一定相等，由右至左執行
+let numberTest = 99 + 1;
+console.log(numberTest);
+numberTest++;
+console.log(numberTest);
+numberTest--;
+console.log(numberTest);
+numberTest += 10;           // 適用於+-*/%**
+console.log(numberTest);
+numberTest -= 10;
+console.log(numberTest);
+
+console.log("%c比較運算子", "color: gold");
+
+// > < >= <= === !== (執行結果是布林值)
+console.log(100 > 1);
+console.log(100 < 1);
+console.log(100 === 1); // 等於 F
+console.log(100 !== 1); // 不等於 T
+
+// == 與 === (嚴格比較，數值與類型都要相同)
+let varNumber10 = 10;
+let varString10 = "10";
+
+console.log(varNumber10 == varString10);
+console.log(varNumber10 === varString10);   // 嚴格比較，資料類型不同，結果為 false
+
+console.log("%c判斷式", "color: gold");
+// 判斷式語法
+// if (布林值) { 布林值等於 true 執行此區塊 block }
+if (false) {
+    console.log("這裡是判斷式");
+}
+
+let score = 0;
+
+// if 要在最上方
+// else if 無限次數
+// else 要在最下方
+if (score >= 60) {
+    console.log("你及格了");
+}
+else if (score >= 50) {
+    console.log("來補考");
+}
+else {
+    console.log("你被當了");
+}
+
+let hp = 70;
+
+if (hp <= 0) {
+    console.log("死亡");
+}
+else if (hp <= 60) {
+    console.log("警告");
+}
+else {
+    console.log("安全");
+}
+
+let hpTest = 70;
+// && 並且
+// 如果 hpTest 小於等於 100 並且 hpTest 大於等於 60 就代表安全
+if (hpTest <= 100 && hpTest >= 60) {
+    console.log("安全");
+}
+else if (hpTest <= 60 && hpTest > 0) {
+    console.log("警告");
+}
+else {
+    console.log("死亡");
+}
+
+console.log("%c迴圈", "color: gold");
+// for 迴圈
+// for 語法：
+// for (初始值; 條件; 迭代器) { 程式區塊 }
+for (let index = 0; index < 10; index++) {
+    console.log("迴圈", index);
+}
